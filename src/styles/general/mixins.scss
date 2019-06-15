@@ -1,0 +1,35 @@
+@mixin mobile {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: $tablet-width + 1) and (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width + 1) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width + 1) {
+    @content;
+  }
+}
+
+@mixin pixel-ratio {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@mixin btn-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
