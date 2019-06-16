@@ -27,7 +27,10 @@
         </button>
         <div class="authorization__content">
           <div class=authorization__img-wrapper">
-            <img src="img/icon@1x.png" alt="описание картинки">
+            <picture>
+                <source type="image/webp" srcset="img/icon@1x.webp 1x, img/icon@2x.webp 2x">
+              <img src="img/icon@1x.png" srcset="img/icon@2x.png 2x" alt="описание картинки">
+            </picture>
           </div>
           <form class="form" action="#" method="POST">
             <div class="form__wrapper">
@@ -52,11 +55,6 @@
         </div>
       </div>
     </section>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <filter id="blur">
-        <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-      </filter>
-    </svg>
 
   </main>
 
